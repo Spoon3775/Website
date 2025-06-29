@@ -59,5 +59,89 @@ body {
     color: #ffffff; 
 }
 
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+  text-align: center; 
+  color: #f0f0f0; 
+}
 
-    
+    .main-body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            position: relative; /* To keep content above the particles */
+            z-index: 1;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        /* Main Name Heading */
+        .home-content h1 {
+            font-size: 4rem; /* 64px */
+            font-weight: 700;
+            margin: 0;
+            letter-spacing: 1px;
+            color: #ffffff;
+        }
+
+        /* Subtitle */
+        .home-content p {
+            font-size: 1.25rem; /* 20px */
+            font-weight: 400;
+            margin: 10px 0 30px;
+            color: #cccccc; /* Slightly dimmer than the name */
+        }
+
+        .social-buttons ul {
+            list-style: none; /* Remove default list styling */
+            padding: 0;
+            margin: 0;
+            display: flex; /* Use flexbox for horizontal alignment */
+            justify-content: center; /* Center the buttons */
+        }
+
+        /* Button styling */
+        .social-buttons a {
+            display: inline-flex; /* Use flex to align icon and text */
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            color: #e0e0e0;
+            background-color: rgba(45, 45, 45, 0.7);
+            border: 1px solid #444;
+            padding: 12px 24px;
+            margin: 5px 10px;
+            border-radius: 8px;
+            font-size: 1rem; /* 16px */
+            transition: background-color 0.3s ease, border-color 0.3s ease;
+        }
+
+        .social-buttons a:hover {
+            background-color: rgba(65, 65, 65, 0.9);
+            border-color: #777;
+        }
+        
+        /* Icon styling */
+        .social-buttons a i {
+            margin-right: 10px;
+            font-size: 1.2rem; /* Make icon slightly larger than text */
+        }
+        
+        /* Responsive adjustments for smaller screens */
+        @media (max-width: 768px) {
+            .hero-section h1 {
+                font-size: 2.5rem; /* Smaller font on mobile */
+            }
+            .hero-section p {
+                font-size: 1rem;
+            }
+            .social-buttons a {
+                padding: 10px 18px;
+            }
+        }
