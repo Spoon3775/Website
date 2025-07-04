@@ -1,25 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta charset = "UTF-8">
-    <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
-    <title>Spoon Studios</title>
+    <title>Spoon Studios | About Me</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
 
-    <!-- Link to your CSS stylesheet -->
-    <link rel = "stylesheet" href = "css/style.css">
-    <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-    <link rel = "icon" type = "image/png" href = "images/icon.png">
-
-    <script src = "https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- Loads jQuery, used to load html from .html files-->
-
+    <!-- Your CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="icon" type="image/png" href="images/icon.png">
+    
 </head>
 <body>
 
-    <!-- This div is the container where the particles will be created. -->
-    <div id = "particles-js"></div>
+    <!-- Particles.js background container -->
+    <div id="particles-js"></div>
 
-    <!-- Website content: -->
+    <!-- Navigation Bar -->
     <header class = "Header">
         <script>
             $(function() { 
@@ -28,13 +31,25 @@
         </script>
     </header>
 
-   
-    <script src = "https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <script src = "app.js"></script> <!-- Initiates the particle config data stored in particles.json -->
+    <!-- Main Page Content -->
+    <main class="content-wrapper">
+        <section class="about-section">
+            <h1 class="about-title">About Me</h1>
+            <p class="about-intro">
+                Hi, I'm Spoon, a 19-year-old software developer and programmer from the UK.
+            </p>
+            <ul class="about-list">
+                <li><i class="fa-solid fa-code"></i> I program in C#, C++, Python, and PostgreSQL.</li>
+                <li><i class="fa-solid fa-hourglass-start"></i> I have been programming for around 8 years.</li>
+                <li><i class="fa-solid fa-graduation-cap"></i> I'm studying at university and have a foundation certificate in Mathematics, Physics, and Computer Science.</li>
+                <li><i class="fa-solid fa-laptop-code"></i> My current projects include this website, a Discord Bot, and a GUI wrapper for an AI API.</li>
+            </ul>
+        </section>
+    </main>
 
-    <div class = "main-body">
-        
-    </div>  
+    <!-- Scripts (loaded at the end for better performance) -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="app.js"></script>
 
 </body>
 </html>
