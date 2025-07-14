@@ -1,12 +1,28 @@
 * {
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  background-color: #1b1e34; 
+  background-color: #1b1e34;
+  font-family: var(--font-primary);
+  color: var(--primary-text);
+  overflow-x: hidden; /* Prevents horizontal scroll */
+}
+
+:root {
+    --bg-color: #1a1a2e;
+    --card-color: #16213e;
+    --primary-text: #e0e0e0;
+    --heading-text: #ffffff;
+    --accent-color: #0f3460;
+    --highlight-color: #e94560;
+    --font-primary: 'Poppins', sans-serif;
+    --font-secondary: 'Roboto Mono', monospace;
 }
 
 
@@ -145,3 +161,62 @@ body {
                 padding: 10px 18px;
             }
         }
+
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 80px); /* Full viewport height minus header */
+    padding: 2rem;
+}
+
+.about-section {
+    background-color: var(--card-color);
+    padding: 2.5rem;
+    border-radius: 15px;
+    max-width: 800px;
+    width: 100%;
+    border: 1px solid var(--accent-color);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.about-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: var(--highlight-color);
+}
+
+.about-intro {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+/* --- 5. Styled List --- */
+.about-list {
+    list-style: none;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.about-list li {
+    background-color: var(--accent-color);
+    padding: 1rem;
+    border-radius: 8px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.about-list li:hover {
+    transform: translateX(10px);
+    background-color: #1c4a86;
+}
+
+.about-list li .fa-solid {
+    margin-right: 1rem;
+    color: var(--highlight-color);
+    width: 20px; /* Ensures icons are aligned */
+}
